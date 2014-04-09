@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+    <Description about="urn:mozilla:install-manifest">
+        <em:type>2</em:type> <!-- 2 : Extension -->
+        <em:description>Replaces 'bitcoin' with 'magic beans'.</em:description>
+        <em:id>bitbeans@argusdusty.com</em:id>
+        <em:version>1.0</em:version>
+        <em:name>BitBeans</em:name>
+        <em:creator>Mark Canning</em:creator>
+        <em:contributor>Alexi Robbins</em:contributor>
+        <em:targetApplication>
+            <Description>
+                <!-- Firefox -->
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>24.0</em:minVersion>
+                <em:maxVersion>32.0</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+        <em:iconURL>chrome://bitbeans/content/icons/default/icon48.png</em:iconURL>
+        <em:icon64URL>chrome://bitbeans/content/icons/default/icon64.png</em:icon64URL>
+        <em:unpack>true</em:unpack> <!-- Apparently needed for some bug -->
+    </Description>
+</RDF>
