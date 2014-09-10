@@ -19,7 +19,7 @@ function bitbean(str) {
 }
 
 function recbitbean(node) {
-	if (node.nodeType == 3) {
+	if (node.nodeType == Node.TEXT_NODE) {
 		node.textContent = bitbean(node.textContent);
 	} else {
 		var childNodes = node.childNodes;
